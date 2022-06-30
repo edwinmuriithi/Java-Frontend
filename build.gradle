@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'org.example'
@@ -8,6 +9,11 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+mainClassName= 'App'
+
+sourceCompatibility= 1.8
+applicationName= 'java-frontend'
+
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
@@ -17,3 +23,5 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task stage(dependsOn: ['clean', 'installDist'])
