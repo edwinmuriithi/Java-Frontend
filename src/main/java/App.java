@@ -1,7 +1,6 @@
 import models.Products;
 import models.Summary;
-import org.json.JSONArray;
-import org.json.JSONObject;
+
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
