@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.heading {
+    margin-left: 55em;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #9E1E1E;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #9E1E1E;
+    color: black;
+    box-shadow: 0 0 10px seashell;
+}
+
+
+/* Home */
+
+#Home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: #9E1E1E;
+    background: url('../images/bgc.jpg') no-repeat center center/cover;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid seashell; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.headings {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.btn {
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid #9E1E1E;
+    color: seashell;
+    outline: none;
+    transition: .6s ease;
+    margin-left: 25em;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: seashell;
+    color: black;
+    box-shadow: 0 0 5px #9E1E1E, 0 0 10px #9E1E1E, 0 0 15px #9E1E1E;
+    font-weight: bold;
+}
+
+
+/* About */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#pic {
+    display: flex;
+}
+
+#pic img {
+    width: 575px;
+    height: 400px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+/* Portfolio */
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #9E1E1E;
+    align-items: center;
+    padding: 20px;
+}
+
+#portfolio h3 {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.gallery {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
